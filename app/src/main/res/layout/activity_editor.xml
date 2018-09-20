@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".EditorActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/product_title"
+                style="@style/text_view_edit_activity"
+                android:text="@string/product_title" />
+
+            <EditText
+                android:id="@+id/title_edit"
+                style="@style/edit_text_edit_activity"
+                android:hint="Name here"
+                android:inputType="textCapSentences" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/product_price"
+                style="@style/text_view_edit_activity"
+                android:text="@string/price" />
+
+            <EditText
+                android:id="@+id/price_edit"
+                android:hint="Price"
+                style="@style/edit_text_edit_activity"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/quantity"
+                style="@style/text_view_edit_activity"
+                android:text="@string/quantity" />
+
+            <EditText
+                android:id="@+id/quantity_edit"
+                android:hint="Quantity available"
+                style="@style/edit_text_edit_activity"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/publisher_name"
+                style="@style/text_view_edit_activity"
+                android:text="@string/pub_name" />
+
+            <EditText
+                android:id="@+id/publisher_name_edit"
+                android:hint="Name"
+                style="@style/edit_text_edit_activity"
+                android:inputType="textCapSentences" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/publisher_num"
+                style="@style/text_view_edit_activity"
+                android:text="@string/pub_num" />
+
+            <EditText
+                android:id="@+id/publisher_num_edit"
+                android:hint="Phone number"
+                style="@style/edit_text_edit_activity"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/sell_n_buy"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/editor_sell"
+                style="@style/sell_editor"
+                android:text="@string/sell_button"/>
+
+            <Button
+                android:id="@+id/editor_restock"
+               style="@style/restock_editor"
+                android:text="@string/restock"/>
+
+            <Button
+                android:id="@+id/editor_delete"
+                style="@style/delete_editor"
+                android:text="@string/delete"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

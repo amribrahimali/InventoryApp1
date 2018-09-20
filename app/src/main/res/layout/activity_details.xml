@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".EditorActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/text_view_edit_activity"
+                android:text="@string/product_title" />
+
+            <TextView
+                android:id="@+id/details_product"
+                style="@style/text_view_edit_activity"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/text_view_edit_activity"
+                android:text="@string/price" />
+
+            <TextView
+                android:id="@+id/details_price"
+                style="@style/text_view_edit_activity"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/text_view_edit_activity"
+                android:text="@string/quantity" />
+
+            <TextView
+                android:id="@+id/details_quantity"
+                style="@style/text_view_edit_activity"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/text_view_edit_activity"
+                android:text="@string/pub_name" />
+
+            <TextView
+                android:id="@+id/details_pub"
+                style="@style/text_view_edit_activity"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/text_view_edit_activity"
+                android:text="@string/pub_num" />
+
+            <TextView
+                android:id="@+id/details_pup_num"
+                style="@style/text_view_edit_activity"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/call"
+            style="@style/call_button"
+            android:text="@string/call_supplier" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/details_restock"
+                style="@style/restock_details"
+                android:text="@string/restock"/>
+
+            <Button
+                android:id="@+id/details_sell"
+                style="@style/sell_details"
+                android:text="@string/sell_button" />
+
+            <Button
+                android:id="@+id/details_delete"
+                style="@style/delete_details"
+                android:text="@string/delete" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
